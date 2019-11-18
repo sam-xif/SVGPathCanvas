@@ -21,7 +21,7 @@ function App() {
         </a>
       </header>*/}
       <OverlayImage
-        imageSrc={'image.jpg'}
+        imageComponent={<img src={'image.jpg'} />}
         overlayComponent={<PathCanvas width={500} height={500} pathProps={{stroke: 'red', fill: 'transparent' }} />}
       />
     </div>
