@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import OverlayImage from './components/OverlayImage'
+import PathCanvas from './components/PathCanvas'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +19,11 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header>*/}
+      <OverlayImage
+        imageSrc={'image.jpg'}
+        overlayComponent={<PathCanvas width={500} height={500} pathProps={{stroke: 'red', fill: 'transparent' }} />}
+      />
     </div>
   );
 }
