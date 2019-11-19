@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import OverlayImage from './components/OverlayImage'
-import PathCanvas from './components/PathCanvas'
+import { OverlayImage, PathCanvas } from '../lib'
 
 function App() {
   return (
